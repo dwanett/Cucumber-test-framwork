@@ -1,0 +1,10 @@
+<aspectj>
+    <weaver>
+        <!-- связываем только классы в наших пакетах, специфичных для конкретного приложения -->
+        <include within="io.cucumber.core.resource.ResourceScanner"/>
+    </weaver>
+    <aspects>
+        <!-- связываем только этот аспект... -->
+        <aspect name="fragment.aspects.FragmentsAspect"/>
+    </aspects>
+</aspectj>
